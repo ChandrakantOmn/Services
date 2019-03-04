@@ -11,7 +11,6 @@ public class CashbackIntentService  extends IntentService {
     public CashbackIntentService() {
         super("Cashback IntentService");
     }
-
     @Override
     protected void onHandleIntent(Intent intent) {
         String cb_category = intent.getStringExtra("cashback_cat");
