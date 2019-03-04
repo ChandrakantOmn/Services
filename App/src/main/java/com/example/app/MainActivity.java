@@ -89,15 +89,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onButtonRandom(View view) {
-        if (mBound) {
-            // Call a method from the LocalService.
-            // However, if this call were something that might hang, then this request should
-            // occur in a separate thread to avoid slowing down the activity performance.
-            int num = mService.getRandomNumber();
-            Toast.makeText(MainActivity.this, "number: " + num, Toast.LENGTH_SHORT).show();
-        }
-    }
 
     // A placeholder fragment containing a simple view.
     public static class PlaceholderFragment extends Fragment {
